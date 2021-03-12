@@ -3,7 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
 
-  // Define a página inicial do app como 'articles'
+  // Define a pÃ¡gina inicial do app como 'articles'
   {
     path: '',
     redirectTo: 'articles',
@@ -29,8 +29,13 @@ const routes: Routes = [
     path: 'about',
     loadChildren: () => import('./pages/about/about.module').then( m => m.AboutPageModule)
   },
+  {
+    path: 'view',
+    loadChildren: () => import('./page/view/view.module').then( m => m.ViewPageModule)
+  },
 
-  // Sempre a última rota!
+  // PÃ¡gina de erro 404
+  // DEVE SER SEMPRE A ÃšLTIMA ROTA
   {
     path: '**',
     loadChildren: () => import('./pages/e404/e404.module').then( m => m.E404PageModule)

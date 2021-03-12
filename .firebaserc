@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "bonecos-d45e3": {
+      "hosting": {
+        "app": [
+          "bonecos-d45e3"
+        ]
+      }
+    }
+  }
+}
