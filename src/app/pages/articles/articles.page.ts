@@ -23,7 +23,7 @@ export class ArticlesPage implements OnInit {
 
     // 4) ObtÃ©m dados do database
     this.itemsCollection = firestore.collection<any>('articles');
-    this.items = this.itemsCollection.valueChanges();
+    this.items = this.itemsCollection.valueChanges({idField: 'id'});
   }
 
   ngOnInit() { }

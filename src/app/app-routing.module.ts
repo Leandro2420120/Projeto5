@@ -30,8 +30,8 @@ const routes: Routes = [
     loadChildren: () => import('./pages/about/about.module').then( m => m.AboutPageModule)
   },
   {
-    path: 'view',
-    loadChildren: () => import('./page/view/view.module').then( m => m.ViewPageModule)
+    path: 'view/:id',
+    loadChildren: () => import('./pages/view/view.module').then( m => m.ViewPageModule)
   },
 
   // PÃ¡gina de erro 404
