@@ -13,7 +13,7 @@ export class NewsPage implements OnInit {
   // 3) Atributos
 
   // API Key obtida de http://newsapi.org
-  private apiKey = '61cab957a8ef4088b2e68b0ec81dd3f9';
+  private apiKey = 'f6b1d5dc3f4c47c483446e353984603f';
 
   // Palavra chave para buscas de notícias
   private apiQuery = 'personagem';
