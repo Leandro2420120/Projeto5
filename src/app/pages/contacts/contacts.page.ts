@@ -156,8 +156,8 @@ export class ContactsPage implements OnInit {
   }
 
   // Processa botões das redes sociais
-  openSocial(name) {
-    window.open(`https://${name}.com/`);
+  openSocial(url: string) {
+    window.open(url);
     return false;
   }
 }
